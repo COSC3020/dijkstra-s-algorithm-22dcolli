@@ -36,3 +36,14 @@ let loopTest = [
 assert(JSON.stringify(dijkstra(loopTest,0)) == JSON.stringify([0,2,5,6]));
 assert(JSON.stringify(dijkstra(loopTest,2)) == JSON.stringify([4,6,0,1]));
 
+let oneWayTest = [
+  [0, 4, 0, 0],
+  [0, 0, 0, 5],
+  [0, 0, 0, 1],
+  [0, 0, 0, 0]
+];
+
+assert(JSON.stringify(dijkstra(oneWayTest, 0)) == JSON.stringify([0, 4, Infinity, 9]));
+assert(JSON.stringify(dijkstra(oneWayTest, 2)) == JSON.stringify([Infinity, Infinity, 0, 1]));
+
+
