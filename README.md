@@ -33,6 +33,6 @@ otherwise. I am aware that plagiarism carries severe penalties and that if plagi
 suspected, charges may be filed against me without prior notice.”
 
 ## Note
-I did not complete this excersise last semester, so I am attempting this completely from scratch. I did discuss this with Lily Brongo and then referenced Ishita Patel's repository from last semester to confirm my logic for the code and response before submission. For this one in particular, I went to her in person to help me through setting up the testing correcting some of my code.
+I did not complete this excersise last semester, so I am attempting this completely from scratch. I did discuss this with Lily Brongo and then referenced Ishita Patel's repository from last semester to confirm my logic for the code and response before submission. For this one in particular, I went to her in person to help me through setting up the testing correcting some of my code. For additional clarity, there is one portion of the test called classGraph(Marked in test code) that is directly taken from Ishita's repository, it was used to show me the syntax that she used and I built from there.
 
 ## Answer
