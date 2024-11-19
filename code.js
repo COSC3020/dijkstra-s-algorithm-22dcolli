@@ -49,3 +49,17 @@ function dijkstra(graph, sourceNode) {
         }
         return dist;
 }
+
+/*
+//test case checker
+let loopTest = [
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]
+];
+
+
+console.log("first: ", dijkstra(loopTest, 0));
+console.log("second: ", dijkstra(loopTest, 2));
+*/
