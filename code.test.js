@@ -3,6 +3,7 @@ const assert = require('assert');
 
 eval(fs.readFileSync('code.js')+'');
 
+//The classGraph test portion was directley from Ishita's repository, she was using it to show me a baseline I could work from and the syntax that she used. The other tests are ones I set up by myself.
 let classGraph = [
   [0, 2, 1, 4, 0, 0, 0, 0],
   [0, 0, 1, 0, 10, 2, 0, 0],
