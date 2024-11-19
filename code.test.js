@@ -25,6 +25,6 @@ let emptyTest = [
   [0, 0, 0, 0],
   [0, 0, 0, 0]
 ];
-assert(JSON.stringify(dijkstra(loopTest,0)) == JSON.stringify([0,Infinity,Infinity,Infinity]));
-assert(JSON.stringify(dijkstra(loopTest,2)) == JSON.stringify([Infinity,Infinity,0,Infinity]));
+assert(JSON.stringify(dijkstra(emptyTest,0)) == JSON.stringify([0,Infinity,Infinity,Infinity]));
+assert(JSON.stringify(dijkstra(emptyTest,2)) == JSON.stringify([Infinity,Infinity,0,Infinity]));
 
