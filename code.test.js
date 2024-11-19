@@ -18,7 +18,6 @@ assert(JSON.stringify(dijkstra(classGraph, 2)) == JSON.stringify([9,11,0,13,8,11
 assert(JSON.stringify(dijkstra(classGraph, 4)) == JSON.stringify([18,20,9,7,0,3,1,6]));
 //end of example section
 
-
 let emptyTest = [
   [0, 0, 0, 0],
   [0, 0, 0, 0],
@@ -27,4 +26,13 @@ let emptyTest = [
 ];
 assert(JSON.stringify(dijkstra(emptyTest,0)) == JSON.stringify([0,Infinity,Infinity,Infinity]));
 assert(JSON.stringify(dijkstra(emptyTest,2)) == JSON.stringify([Infinity,Infinity,0,Infinity]));
+
+let loopTest = [
+  [0, 2, 0, 0],
+  [0, 0, 3, 0],
+  [4, 0, 0, 1],
+  [0, 0, 0, 0]
+];
+assert(JSON.stringify(dijkstra(loopTest,0)) == JSON.stringify([0,2,5,6]));
+assert(JSON.stringify(dijkstra(loopTest,2)) == JSON.stringify([4,6,0,1]));
 
