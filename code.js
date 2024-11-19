@@ -21,32 +21,28 @@ function dijkstra(graph, sourceNode) {
     //source to 0
     dist[sourceNode] = 0
 
-    //start traversing
+    //start traversing all nodes
     while (markedVertices.length != graph.length) 
         {
           let node = 0;
           let min = Infinity;
-            
-          for (let i = 0; i < graph.length; i++) 
-          {
+
+          //value traversal
+          for (let i = 0; i < graph.length; i++) {
             if (dist[i] < min && markedVertices.indexOf(i) === -1) 
             {
               min = dist[i];
               node = i;
             }
           }
-      
-          markedVertices.push(node);
-         
-          
-          
             
-          for (let next = 0; next < graph.length; next++) 
-          {
+          markedVertices.push(node);
+
+         // edge traversal
+          for (let next = 0; next < graph.length; next++){ 
             let tempDist = dist[node] + graph[node][next];
 
-            if (graph[node][next] > 0 && dist[next] > tempDist) 
-            {
+            if (graph[node][next] > 0 && dist[next] > tempDist) {
               dist[next] = tempDist;
             }
           }
