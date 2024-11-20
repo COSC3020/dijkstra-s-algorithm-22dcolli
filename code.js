@@ -29,6 +29,7 @@ function dijkstra(graph, sourceNode) {
 
           //value traversal
           for (let i = 0; i < graph.length; i++) {
+            //Ishita explained this if to me statement but I coded it
             if (dist[i] < min && markedVertices.indexOf(i) === -1) 
             {
               min = dist[i];
@@ -40,10 +41,13 @@ function dijkstra(graph, sourceNode) {
 
          // edge traversal
           for (let next = 0; next < graph.length; next++){ 
+            //she explained the following line and i coded it, but i got the graph[node][next] part wrong so she told me and I fixed it
             let tempDist = dist[node] + graph[node][next];
-
+              
+            //Ishita sat at my computer and coded this logic
             if (graph[node][next] > 0 && dist[next] > tempDist) {
               dist[next] = tempDist;
+            //
             }
           }
         }
